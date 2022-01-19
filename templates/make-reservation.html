@@ -53,34 +53,34 @@
 
 
     <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <h1 class="mt-5">Search fot Availability</h1>
-            <form action="/reservation.html" method="post">
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="start_date" class="form-label">Starting Date</label>
-                            <input required type="date" class="form-control" id="start_date" name="start_date"
-                                   aria-describedby="startDateHelp">
-                            <div id="startDateHelp" class="form-text">Enter your starting date in the form of
-                                YYYY-MM-DD
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="end_date" class="form-label">Ending Date</label>
-                            <input required type="date" class="form-control" id="end_date" name="end_date"
-                                   aria-describedby="endDateHelp">
-                            <div id="endDateHelp" class="form-text">Enter your ending date in the form of YYYY-MM-DD
-                            </div>
-                        </div>
-                    </div>
+        <div class="col">
+            <h1>Make reservation</h1>
+            <form method="post" action="needs-validation" novalidate>
+
+                <div class="mb-3 mt-5">
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" name="first_name" type="text" class="form-control" required
+                           autocomplete="off">
                 </div>
-                <button type="submit" class="btn btn-primary">Search Availability</button>
+
+                <div class="mb-3">
+                    <label for="last_name">Last Name:</label>
+                    <input id="last_name" name="last_name" type="text" class="form-control" required autocomplete="off">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="text" class="form-control" required autocomplete="off">
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone">Phone number:</label>
+                    <input id="phone" name="phone" type="text" class="form-control" required autocomplete="off">
+                </div>
+                <hr>
+                <input type="submit" class="btn btn-primary" value="Make Reservation">
             </form>
-            </br>
+            <br/>
         </div>
     </div>
 
