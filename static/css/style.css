@@ -11,6 +11,10 @@
     max-width: 50%;
 }
 
-p{
+.notie-container {
+    box-shadow: none;
+}
 
+.datepicker{
+    z-index: 10000;
 }
