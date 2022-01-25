@@ -15,6 +15,10 @@
     box-shadow: none;
 }
 
-.datepicker{
+.swal2-actions {
+    z-index: 0;
+}
+
+.datepicker {
     z-index: 10000;
 }
