@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/alexedwards/scs/v2"
-	"github.com/koopa0/booking-service/pkg/config"
-	"github.com/koopa0/booking-service/pkg/handlers"
-	"github.com/koopa0/booking-service/pkg/render"
+	"github.com/koopa0/booking-service/internal/config"
+	"github.com/koopa0/booking-service/internal/handlers"
+	"github.com/koopa0/booking-service/internal/render"
 	"log"
 	"net/http"
 	"time"
