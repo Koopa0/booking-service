@@ -225,6 +225,27 @@
             })
         }
 
+        function notifyModal(title, text, icon, confirmationButtonText) {
+            Swal.fire({
+                title: title, // optional, default = 4, enum: [1, 2, 3, 4, 5, 'success', 'warning', 'error', 'info', 'neutral']
+                html: text,
+                icon: icon,
+                confirmButtonText: confirmationButtonText
+            })
+        }
+
+        {{with .Error}}
+        notify("{{.}}", "error")
+        {{end}}
+
+        {{with .Flash}}
+        notify("{{.}}", "success")
+        {{end}}
+
+        {{with .Warning}}
+        notify("{{.}}", "warning")
+        {{end}}
+
 
     </script>
     </body>

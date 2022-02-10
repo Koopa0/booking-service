@@ -1,10 +1,12 @@
 package main
 
 import (
+	"encoding/gob"
 	"fmt"
 	"github.com/alexedwards/scs/v2"
 	"github.com/koopa0/booking-service/internal/config"
 	"github.com/koopa0/booking-service/internal/handlers"
+	"github.com/koopa0/booking-service/internal/models"
 	"github.com/koopa0/booking-service/internal/render"
 	"log"
 	"net/http"
@@ -18,6 +20,7 @@ var session *scs.SessionManager
 
 // main is the main function
 func main() {
+	gob.Register(models.Reservation{})
 	// change this to true when in production
 	app.InProduction = false
 
