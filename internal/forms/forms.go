@@ -36,7 +36,7 @@ func (f *Form) Required(fields ...string) {
 
 // Has 檢查Form的值是否為空
 func (f *Form) Has(field string, r *http.Request) bool {
-	x := r.Form.Get(field)
+	x := f.Get(field)
 	if x == "" {
 		return false
 	}
@@ -45,7 +45,7 @@ func (f *Form) Has(field string, r *http.Request) bool {
 
 //MinLength 限制字數
 func (f *Form) MinLength(field string, length int, r *http.Request) bool {
-	x := r.Form.Get(field)
+	x := f.Get(field)
 	if len(x) < length {
 		f.Errors.Add(field, fmt.Sprintf("This field must be at least %d characters long", length))
 		return false

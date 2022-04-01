@@ -1,0 +1,22 @@
+mode: set
+github.com/koopa0/booking-service/internal/handlers/handlers.go:23.47,27.2 1 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:30.33,32.2 1 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:35.67,40.2 3 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:43.68,55.2 5 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:57.74,66.2 4 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:68.78,70.16 2 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:75.2,89.19 6 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:99.2,101.66 2 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:70.16,73.3 2 0
+github.com/koopa0/booking-service/internal/handlers/handlers.go:89.19,97.3 4 0
+github.com/koopa0/booking-service/internal/handlers/handlers.go:104.75,106.2 1 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:108.79,112.2 3 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:119.79,126.16 3 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:130.2,131.14 2 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:126.16,128.3 1 0
+github.com/koopa0/booking-service/internal/handlers/handlers.go:134.70,136.2 1 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:138.71,140.2 1 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:142.69,144.2 1 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:146.81,148.9 2 1
+github.com/koopa0/booking-service/internal/handlers/handlers.go:154.2,160.4 4 0
+github.com/koopa0/booking-service/internal/handlers/handlers.go:148.9,153.3 4 1
