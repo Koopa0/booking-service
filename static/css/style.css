@@ -1,3 +1,12 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.main-container{
+    flex: 1;
+    position: relative;
+}
 .my-footer{
     height: 5em;
     background-color: #163b65 ;
@@ -22,3 +31,4 @@
 .datepicker {
     z-index: 10000;
 }
+
