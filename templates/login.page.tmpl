@@ -4,42 +4,37 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <br>
-                <h1>Login</h1>
+                <h1 class="logo" style="font-size: 40px;">Login</h1>
+                <div class="col-md-offset-5 col-md-4 text-center">
+                    <div class="form-login">
+                        <form method="post" action="/user/login" action="needs-validation" novalidate>
+                            <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
+                            <div class="form-group mt-3">
+                                <label for="email" class="logo">Email</label>
+                                {{with .Form.Errors.Get "email"}}
+                                    <label class="text-danger">{{.}}</label>
+                                {{end}}
+                                <input id="email" name="email" type="email"
+                                       class="form-control {{with .Form.Errors.Get "email" }} is-invalid {{end}}"
+                                       autocomplete="off" value="" required>
+                            </div>
 
-                <form method="post" action="/user/login" action="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="password" class="logo">Password</label>
+                                {{with .Form.Errors.Get "password"}}
+                                    <label class="text-danger">{{.}}</label>
+                                {{end}}
+                                <input id="password" name="password" type="password"
+                                       class="form-control {{with .Form.Errors.Get "password" }} is-invalid {{end}}"
+                                       autocomplete="off" value="" required>
+                            </div>
 
-                    <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
-                    <div class="form-group mt-3">
-                        <label for="email">Email</label>
-                        {{with .Form.Errors.Get "email"}}
-                            <label class="text-danger">{{.}}</label>
-                        {{end}}
-                        <input id="email" name="email" type="email"
-                               class="form-control {{with .Form.Errors.Get "email" }} is-invalid {{end}}"
-                               autocomplete="off" value="" required>
+                            <hr>
+
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </form>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="password">Password</label>
-                        {{with .Form.Errors.Get "password"}}
-                            <label class="text-danger">{{.}}</label>
-                        {{end}}
-                        <input id="password" name="password" type="password"
-                               class="form-control {{with .Form.Errors.Get "password" }} is-invalid {{end}}"
-                               autocomplete="off" value="" required>
-                    </div>
-
-                    <hr>
-
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="/static/images/ania.jpg"
-                     class="img-fluid img-thumbnail mx-auto d-block room-image" alt="room image">
+                </div>
             </div>
         </div>
     </div>

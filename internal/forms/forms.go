@@ -35,7 +35,7 @@ func (f *Form) Required(fields ...string) {
 }
 
 // Has 檢查Form的值是否為空
-func (f *Form) Has(field string, r *http.Request) bool {
+func (f *Form) Has(field string) bool {
 	x := f.Get(field)
 	if x == "" {
 		return false

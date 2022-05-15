@@ -67,7 +67,7 @@
     document.querySelector('.navbar').classList.remove('fixed-top');
   }
   else {
-    document.querySelector('#proBanner').classList.add('d-none');
+    document.querySelector('#proBxanner').classList.add('d-none');
     document.querySelector('.navbar').classList.add('fixed-top');
   }
   
